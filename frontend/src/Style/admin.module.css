@@ -1,0 +1,510 @@
+/* ===== BASE STYLES ===== */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #E6CBA8;
+    margin: 0;
+    padding: 0;
+    color: #5a4e3c;
+}
+
+/* ===== HEADER STYLES ===== */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title {
+    font-weight: 700;
+    margin: 0;
+    color: #5a4e3c;
+    font-size: 1.5rem;
+}
+
+#userEmail {
+    margin: 0;
+    color: #c98151;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #5a4e3c;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c98151;
+}
+
+.active {
+    color: #c98151 !important;
+    text-decoration: underline;
+}
+
+
+.logoutButton {
+    padding: 10px 20px;
+    background-color: #ffb6b6;
+    color: #8b0000;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logoutButton:hover {
+    background-color: #ff9e9e;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== MAIN CONTENT STYLES ===== */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #E6CBA8;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#message {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+/* ===== TABLE STYLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f3e7d7;
+    color: #5a4e3c;
+    font-weight: bold;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(odd) {
+    background-color: #fffdfb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f3ea;
+}
+
+td {
+    color: #333;
+}
+
+/* ===== BUTTON STYLES ===== */
+.deleteButton {
+    padding: 10px 10px;
+    background-color: #c73d3d;
+    color: white;
+    border: 2px solid #9c3333;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:100px;
+}
+
+.deleteButton:hover {
+    background-color: #e62929;
+}
+
+#updateButton {
+    padding: 10px 10px;
+    background-color: #c98151;
+    color: white;
+    border: 2px solid #b96933;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#updateButton:hover {
+    background-color: #9c5e34;
+}
+
+#addTaskButton {
+    padding: 10px 10px;
+    background-color: #50a7ad;
+    color: white;
+    border: 2px solid #28686c;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #18a9b4;
+}
+
+#viewTaskButton {
+    padding: 10px 10px;
+    background-color: #50a7ad;
+    color: white;
+    border: 2px solid #28686c;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#viewTaskButton:hover {
+    background-color: #18a9b4;
+}
+
+#AddUserButton {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #E6CBA8;
+    color: white;
+    border: 2px solid #E6CBA8;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#AddUserButton:hover {
+    background-color: #cfb68c;
+}
+
+
+
+
+
+
+
+
+
+
+
+.red-btn {
+    padding: 10px 10px;
+    background-color: #c73d3d;
+    color: white;
+    border: 2px solid #9c3333;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red-btn:hover {
+    background-color: #e62929;
+}
+
+.blue-btn {
+    padding: 10px 10px;
+    background-color: #50a7ad;
+    color: white;
+    border: 2px solid #28686c;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.blue-btn:hover {
+    background-color: #18a9b4;
+}
+
+
+
+
+
+
+
+
+
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.task-card {
+    background-color: #fffdfb;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #E6CBA8;
+    transition: transform 0.3s ease;
+    max-width: 800px;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3e7d7;
+}
+
+.task-title {
+    font-size: 1.5rem;
+    color: #5a4e3c;
+    margin: 0;
+    font-weight: 600;
+}
+
+.task-id {
+    background-color: #f3e7d7;
+    color: #c98151;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.task-section {
+    margin-bottom: 15px;
+}
+
+.task-label {
+    font-weight: 600;
+    color: #c98151;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.task-value {
+    color: #5a4e3c;
+    padding-left: 10px;
+}
+
+.task-description {
+    background-color: #f9f3ea;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.task-dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.date-box {
+    background-color: #f3e7d7;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.date-label {
+    font-weight: 600;
+    color: #c98151;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.date-value {
+    font-weight: bold;
+    color: #5a4e3c;
+}
+
+.task-people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.person-box {
+    background-color: #f9f3ea;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.task-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.meta-box {
+    background-color: #f3e7d7;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #f3e7d7;
+}
+
+.status-history {
+    margin-top: 20px;
+}
+
+.status-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #f3e7d7;
+}
+
+.status-name {
+    font-weight: 600;
+    color: #5a4e3c;
+}
+
+.status-date {
+    color: #c98151;
+    font-size: 0.9rem;
+}
+
+
+
+.statusSelect {
+  padding: 10px 20px;
+  border-radius: 12px; /* match button rounding */
+  border: none;
+  background-color: #e0cfae; /* same beige as your buttons */
+  color: #fff; /* white text like buttons */
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px; /* spacing like buttons */
+  transition: all 0.3s ease;
+  width:250px;
+  height:40px;
+}
+
+/* Hover effect to match button style */
+.statusSelect:hover {
+  background-color: #d4b887; /* slightly darker beige */
+}
+
+/* Focus effect */
+.statusSelect:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+
+/* admin.module.css */
+
+/* General Button Styles */
+.button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Logout Button */
+.logoutButton {
+  background-color: #f56565; /* red */
+  color: #fff;
+}
+.logoutButton:hover {
+  background-color: #c53030; /* darker red */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Add Task Button */
+.addTaskButton {
+  background-color: #48bb78; /* green */
+  color: #fff;
+}
+.addTaskButton:hover {
+  background-color: #2f855a; /* darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Status Filter Select */
+.statusSelect {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f7fafc;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.statusSelect:hover {
+  border-color: #3182ce;
+  background-color: #ebf8ff;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
