@@ -29,7 +29,7 @@ const AddTask = () => {
       const session = await supabase.auth.getSession();
       const token = session.data.session?.access_token;
 
-      const res = await fetch("http://localhost:4000/api/tasks/users/list", {
+      const res = await fetch("https://task-manager-app-internship.onrender.com/api/tasks/users/list", {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -46,7 +46,7 @@ const AddTask = () => {
 
     const token = (await supabase.auth.getSession()).data.session.access_token;
 
-    const response = await fetch("http://localhost:4000/api/tasks", {
+    const response = await fetch("https://task-manager-app-internship.onrender.com/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

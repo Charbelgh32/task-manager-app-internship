@@ -21,9 +21,9 @@ const HomePage = () => {
     if (!token) return;
 
     // if status=all call the function
-    let url = "http://localhost:4000/api/tasks";
+    let url = "https://task-manager-app-internship.onrender.com/api/tasks";
     //else call the filter function
-    if (status !== "all") url = `http://localhost:4000/api/tasks/status/${status}`;
+    if (status !== "all") url = `https://task-manager-app-internship.onrender.com/api/tasks/status/${status}`;
 
     try {
       const response = await fetch(url, {
@@ -44,7 +44,7 @@ const HomePage = () => {
     const token = session?.access_token;
 
     try {
-      const response = await fetch(`http://localhost:4000/api/tasks/${Taskid}`, {
+      const response = await fetch(`https://task-manager-app-internship.onrender.com/api/tasks/${Taskid}`, {
         method: "DELETE",
         headers: { "Authorization": `Bearer ${token}` },
       });
